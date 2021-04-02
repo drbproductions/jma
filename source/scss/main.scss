@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Questrial&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
+@import "vars";
+@import "bootstrap_override";
+@import "../../vendor/bootstrap-4.5.0/scss/bootstrap";
+@import "../../vendor/animate.4.1.0.min";
+@import "../../vendor/slick-1.9.0/slick/slick";
+$slick-arrow-color: $primary;
+$slick-dot-color: $primary;
+
+@import "../../vendor/slick-1.9.0/slick/slick-theme"; 
+@import "global_layout";
+@import "typography";
+
+ 
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+
+}
+
+@include media-breakpoint-up(lg) {
+
+}
+
+@include media-breakpoint-up(xl) {
+	
+}
+
+.slick-prev,
+.slick-next {
+	display:none;
+}
+
+@include media-breakpoint-up(sm) {
+	.slick-next {
+	    right: 50px;
+	}
+	.slick-prev {
+		left: 25px;
+		z-index: 999;
+	}
+	.slick-prev,
+	.slick-next {
+		display:block;
+		top: 40%;
+	    &:before {
+	        font-size: 30px;
+	    }
+	}
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+}

@@ -1,0 +1,51 @@
+figcaption {
+	text-align: center;
+}
+
+// blockquote:before {
+//   color: #ccc;
+//   content: "\201C";
+//   font-size: 4em;
+//   line-height: 0.1em;
+//   margin-right: 0.25em;
+//   vertical-align: -0.4em;
+// }
+// blockquote p {
+//   display: inline;
+// }
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0;
+  padding: 1.5rem 3rem;
+}
+
+blockquote:before {
+  position: absolute;
+  content: "\201C";
+  font-size: 4em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
+}
+blockquote:after {
+  position: absolute;
+  content: close-quote;
+  font-size: 4em;
+  bottom: 0;
+  right: 0;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
+}
+blockquote p {
+  display: inline;
+}
+dl dt {
+	font-weight: 600;
+}
+details {
+	margin-bottom: 1rem;
+	summary {
+		font-weight: 600;
+	}
+}
