@@ -13,7 +13,8 @@
                 <p class="h3"><a href="tel:+13065305482">306.530.5482</a></p>
         </div>
         <div class="col-md-6">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20335.697986891973!2d-104.538088!3d50.423175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531ea0156ce3f407%3A0xa1eae09e91dae6eb!2s10138%20Wascana%20Estates%2C%20Regina%2C%20SK%20S4V%202X4!5e0!3m2!1sen!2sca!4v1614220715584!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="iframe-container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20335.697986891973!2d-104.538088!3d50.423175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531ea0156ce3f407%3A0xa1eae09e91dae6eb!2s10138%20Wascana%20Estates%2C%20Regina%2C%20SK%20S4V%202X4!5e0!3m2!1sen!2sca!4v1614220715584!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
       </div>
 
@@ -29,5 +30,53 @@
     </div>
   </section>
 </footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      speed: 1500,
+      effect: 'fade',
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script>
+
+  gsap.from("#gsap-home-testimonial", {
+    scrollTrigger: {
+      trigger: '#gsap-home-testimonial',
+      start: "center center",
+      end: "top center",
+      scrub: 2
+    },
+    y: 50,
+    opacity: 0
+  })
+  gsap.from("#gsap-home-welcome", {
+    scrollTrigger: {
+      trigger: '#gsap-home-welcome',
+      start: "center bottom",
+      end: "top center",
+      scrub: 1
+    },
+    x: 50,
+    opacity: 0
+  })
+</script>
 </body>
 </html>

@@ -41,7 +41,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1400px;
-  --font-family-sans-serif: "Open Sans", sans-serif;
+  --font-family-sans-serif: "Questrial", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -64,7 +64,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5771,7 +5771,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5872,7 +5872,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -14241,33 +14241,9 @@ section {
   padding: 2em 0;
 }
 
-section.no-bottom {
-  padding-bottom: 0;
-}
-
-section.no-top {
-  padding-top: 0;
-}
-
-section.container-fluid, section.container-sm, section.container-md, section.container-lg, section.container-xl {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-@media (min-width: 576px) {
-  section.container-fluid .container, section.container-sm .container, section.container-md .container, section.container-lg .container, section.container-xl .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 @media (min-width: 768px) {
   section {
     padding: 4em 0;
-  }
-
-  section.container-fluid .container, section.container-sm .container, section.container-md .container, section.container-lg .container, section.container-xl .container {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media (min-width: 992px) {
@@ -14275,6 +14251,26 @@ section.container-fluid, section.container-sm, section.container-md, section.con
     padding: 6em 0;
   }
 }
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+
+.iframe-container > * {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 figcaption {
   text-align: center;
 }
@@ -14317,6 +14313,75 @@ details {
 }
 details summary {
   font-weight: 600;
+}
+
+/*----  https://codepen.io/donhovanndesign/pen/YzXzPXZ ----*/
+#cards_landscape_wrap-2 {
+  text-align: center;
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box {
+  overflow: hidden;
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+  transition: all 0.9s ease;
+  opacity: 0.9;
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box {
+  text-align: center;
+  height: 100%;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+  padding: 15px;
+}
+
+#cards_landscape_wrap-2 a {
+  text-decoration: none;
+  outline: none;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  height: 100%;
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in;
+  transform: translateY(-3px);
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  padding-bottom: 30px;
+  background: #404042;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #bfcca1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #bfcca1 !important;
 }
 
 .slick-prev,

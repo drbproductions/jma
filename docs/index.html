@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en-CA">
 <head>
@@ -8,8 +7,9 @@
   <meta name="description" content="This is the description and you should replace this.">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://drbproductions.github.io/jma/css/main.css">
-  <script defer src="https://drbproductions.github.io/jma/js/main.js"></script>
+  <link rel="stylesheet" href="/css/main.css">
+  <script defer src="/js/main.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
   <!--[if IE]>
@@ -18,7 +18,7 @@
 
   <nav class="navbar navbar-global navbar-expand-md navbar-dark bg-dark">
       <div class="container">
-          <a class="navbar-brand" href="https://drbproductions.github.io/jma/" title="Home"><img src="https://drbproductions.github.io/jma/img/logo.png" alt="Logo"></a>
+          <a class="navbar-brand" href="/" title="Home"><img src="/img/logo.png" alt="Logo"></a>
           <button class="navbar-toggler navbar-toggler-right align-self-center my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,111 +41,357 @@
               </ul>
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                      <a class="nav-link" href="https://drbproductions.github.io/jma/">Home</a>
+                      <a class="nav-link" href="/">Home</a>
                   </li>
                   <li class="nav-item ">
-                      <a class="nav-link" href="https://drbproductions.github.io/jma/projects">Projects</a>
+                      <a class="nav-link" href="/projects">Projects</a>
                   </li>
                   <li class="nav-item ">
-                      <a class="nav-link" href="https://drbproductions.github.io/jma/about-us">About Us</a>
+                      <a class="nav-link" href="/contact-us">Contact Us</a>
                   </li>
                   <li class="nav-item ">
-                      <a class="nav-link" href="https://drbproductions.github.io/jma/contact-us">Contact Us</a>
-                  </li>
-                  <li class="nav-item ">
-                      <a class="nav-link" href="https://drbproductions.github.io/jma/style-guide">Style Guide</a>
+                      <a class="nav-link" href="/style-guide">Style Guide</a>
                   </li>
               </ul>
           </div>
       </div>
   </nav> 
 <article>
+  <section class="container-fluid bg-dark pb-4 pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+         <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <source srcset="/img/home_carousel_01.webp" type="image/webp">
+                    <source srcset="/img/home_carousel_01.jpg" type="image/jpeg"> 
+                    <img src="/img/home_carousel_01.jpg" alt="" class="img-fluid mb-4">
+                  </picture>
+                  <p>CENTRAL ON 15TH - COMMERCIAL & CONDOMINIUM DEVELOPMENT<br>Regina, Saskatchewan</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                   <picture>
+                    <source srcset="/img/home_carousel_02.webp" type="image/webp">
+                    <source srcset="/img/home_carousel_02.jpg" type="image/jpeg"> 
+                    <img src="/img/home_carousel_01.jpg" alt="" class="img-fluid mb-4">
+                  </picture>
+                  <p>KRAMER LTD. - NEW DEALERSHIP<br>Battleford, Saskatchewan</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="/img/home_carousel_03.webp" alt="" class="img-fluid mb-4">
+                  <p>RBYC - REGINA BEACH YACHT CLUB<br>Regina Beach, Saskatchewan</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="/img/home_carousel_04.webp" alt="" class="img-fluid mb-4">
+                  <p>EASTGATE COMMERCIAL DEVELOPMENT<br>Regina, Saskatchewan</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="/img/home_carousel_05.webp" alt="" class="img-fluid mb-4">
+                  <p>ROCHDALE COMMERCIAL DEVELOPMENT<br>Regina, Saskatchewan</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="/img/home_carousel_06.webp" alt="" class="img-fluid mb-4">
+                  <p>PINNACLE WAREHOUSE<br>Regina, Saskatchewan</p>
+                </a>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div id="gsap-home-welcome" class="col-md-7 col-lg-8">
+          <h1>WELCOME TO JMA</h1>
+          <p>JMA Architecture Ltd. is an experienced architectural firm based out of Regina, Saskatchewan offering a fresh and imaginative architectural design service to its clientele. JMA corporate goal is to provide creative yet responsible architectural design that exceeds the expectations of the client.</p>
+          <p>The founder and owner, John McGinn, has over 30 years of experience in the architectural industry, with 15 years of experience within an integrated architectural/engineering firm. John prides himself on:</p>
+          <ul>
+            <li>having an intuitive and creative design sense</li>
+            <li>his strong technical experience</li>
+            <li>being fun to work with!</li>
+          </ul>
+          <p>JMA design service incorporates 3-D imagery within the schematic/design development services as a design standard to all its clientele. JMA is of the view that it is critically important for the client to have a clear vision of the project.</p>
+        </div>
+        <div id="gsap-home-testimonial" class="col-md-5 col-lg-4 pr-md-5">
+          <div class="card bg-primary mt-4 mt-md-0 mb-3 w-100">
+            <div class="card-header small text-white">TESTIMONIAL</div>
+            <div class="card-body">
+              <p class="card-text">"We have a great working relationship with JMA Architecture…we are always searching to find an architectural team that we can do good work with."</p>
+              <p class="card-text">Brian Barber<br>
+                Senior Vice President<br>
+                <em>Ledcor Construction Limited</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center text-white">Featured Work</h2>
+        </div>
+      </div>
+      <div class="row" id="cards_landscape_wrap-2">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-5">
+          <a href="">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img class="img-fluid" src="/img/projects/01/work_05_sm.jpg" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6 class="mb-0">Central on 15th - Commercial & Condominium Development</h6>
+                  <p class="mb-0">Regina, Saskatchewan</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-5">
+          <a href="">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img class="img-fluid" src="/img/projects/02/work_01_sm.jpg" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6 class="mb-0">Kramer Ltd. - New Dealership</h6>
+                  <p class="mb-0">Battleford, Saskatchewan</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-5">
+          <a href="">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img class="img-fluid" src="/img/projects/03/work_01_sm.jpg" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6 class="mb-0">RBYC - Regina Beach Yacht Club</h6>
+                  <p class="mb-0">Regina Beach, Saskatchewan</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-5">
+          <a href="">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img class="img-fluid" src="/img/projects/04/work_01_sm.jpg" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6 class="mb-0">Eastgate Commercial Development</h6>
+                  <p class="mb-0">Regina, Saskatchewan</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-5">
+          <a href="">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img class="img-fluid" src="/img/projects/05/work_01_sm.jpg" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6 class="mb-0">Rochdale Commercial Development</h6>
+                  <p class="mb-0">Regina, Saskatchewan</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-5">
+          <a href="">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img class="img-fluid" src="/img/projects/06/work_01_sm.jpg" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6 class="mb-0">Pinnacle Warehouse</h6>
+                  <p class="mb-0">Regina, Saskatchewan</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid bg-primary" style="background-image: url('/img/about_us.png'); 
+  background-color: #cccccc;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;background-attachment: fixed;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>About Us</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Consultant Team</h3>
+          <p>JMA Architecture's building design service benefits and builds upon a strong and dynamic relationship with the majority of Regina's professional design consultants. JMA has had the pleasure of working with the majority of the Civil, Structural, Mechanical, Electrical and Geotechnical professional disciplines in the community on past projects. We strive to maintain a strong connection with our consultant partners; a combination of viewpoints and design strengths make it important to entrust and empower the team professionals in a collaborative manner.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Methodology</h3>
+          <p>We believe that every project has a special set of parameters, variables and requirements that need to be exposed through the design/building process. The Architectural team should ask the right questions, encourage new ideas, and expose the client to possibilities not yet discovered or realized. Each building design problem is different but by implementing each incremental step of our design methodology process, the complexion of the project can be exposed, analyzed and properly documented to establish the total scope of project work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--
   <section class="container-fluid bg-dark pt-0 pb-4">
     <div class="container">
       <div class="row">
         <div class="col-md-10 offset-md-1">
-          
           <div class="your-class">
             <div>
-              <a href="#"><img src="https://drbproductions.github.io/jma/img/home_carousel_01.jpg" alt="" class="img-fluid"></a>
+              <a href="#"><img src="/img/home_carousel_01.jpg" alt="" class="img-fluid"></a>
               <p class="text-center bg-secondary mt-4"><a  href="#">CENTRAL ON 15TH - COMMERCIAL & CONDOMINIUM DEVELOPMENT<br>Regina, Saskatchewan</a></p>
             </div>
             <div>
-              <a href="#"><img src="https://drbproductions.github.io/jma/img/home_carousel_02.jpg" alt="" class="img-fluid"></a>
+              <a href="#"><img src="/img/home_carousel_02.jpg" alt="" class="img-fluid"></a>
               <p class="text-center bg-secondary mt-4"><a  href="#">KRAMER LTD. - NEW DEALERSHIP<br>Battleford, Saskatchewan</a></p>
             </div>
             <div>
-              <a href="#"><img src="https://drbproductions.github.io/jma/img/home_carousel_03.jpg" alt="" class="img-fluid"></a>
+              <a href="#"><img src="/img/home_carousel_03.jpg" alt="" class="img-fluid"></a>
               <p class="text-center bg-secondary mt-4"><a  href="#">RBYC - REGINA BEACH YACHT CLUB<br>Regina Beach, Saskatchewan</a></p>
             </div>
             <div>
-              <a href="#"><img src="https://drbproductions.github.io/jma/img/home_carousel_04.jpg" alt="" class="img-fluid"></a>
+              <a href="#"><img src="/img/home_carousel_04.jpg" alt="" class="img-fluid"></a>
               <p class="text-center bg-secondary mt-4"><a  href="#">EASTGATE COMMERCIAL DEVELOPMENT<br>Regina, Saskatchewan</a></p>
             </div>
             <div>
-              <a href="#"><img src="https://drbproductions.github.io/jma/img/home_carousel_05.jpg" alt="" class="img-fluid"></a>
+              <a href="#"><img src="/img/home_carousel_05.jpg" alt="" class="img-fluid"></a>
               <p class="text-center bg-secondary mt-4"><a  href="#">ROCHDALE COMMERCIAL DEVELOPMENT<br>Regina, Saskatchewan</a></p>
             </div>
             <div>
-              <a href="#"><img src="https://drbproductions.github.io/jma/img/home_carousel_06.jpg" alt="" class="img-fluid"></a>
+              <a href="#"><img src="/img/home_carousel_06.jpg" alt="" class="img-fluid"></a>
               <p class="text-center bg-secondary mt-4"><a  href="#">PINNACLE WAREHOUSE<br>Regina, Saskatchewan</a></p>
-            </div> 
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+-->
+</article>
+<!-- <aside>
   <section class="container-fluid bg-primary">
+    <div class="container">
+      sdfasdf
+    </div>
+  </section>
+  </aside> -->
+<footer class="main-footer bg-dark">
+  <section class="container-fluid pt-5 pb-4">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-md-3  mb-5"><a class="footer-navbar-brand" href="/" title="Home"><img src="/img/logo.png" alt="Logo" class="img-fluid"></a></div>
+        <div class="col-md-3">
+          <h2 class="h4 text-white">CONTACT US</h2>
+          <address><strong>JMA Architecture</strong><br>
+                    10138 Wascana Estates<br>
+                    Regina, SK &nbsp; CANADA<br>
+                    S4V 2X4
+                </address>
+                <p class="h3"><a href="tel:+13065305482">306.530.5482</a></p>
+        </div>
+        <div class="col-md-6">
+          <div class="iframe-container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20335.697986891973!2d-104.538088!3d50.423175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531ea0156ce3f407%3A0xa1eae09e91dae6eb!2s10138%20Wascana%20Estates%2C%20Regina%2C%20SK%20S4V%202X4!5e0!3m2!1sen!2sca!4v1614220715584!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="container-fluid bg-black mt-0 py-3">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-                    <h1 class="text-center">JMA Architecture Ltd.</h1>
+        <div class="col-md-12 text-center text-white">
+           <p>&copy;<script>document.write(new Date().getFullYear())</script> JMA Architecture. jmaarchitecture.ca All Rights Reserved.</p>
         </div>
       </div>
     </div>
-    
   </section>
-</article>
-<aside>
-  <section class="container-fluid bg-primary">
-    <div class="container">
-      <h2 class="text-white">This is an aside</h2>
-    </div>
-  </section>
-</aside>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      speed: 1500,
+      effect: 'fade',
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script>
 
-
-  <footer class="main-footer bg-dark">
-    <section class="container-fluid pt-5 pb-4">
-      <div class="container">
-        <div class="row text-white">
-          <div class="col-md-3  mb-5"><a class="footer-navbar-brand" href="https://drbproductions.github.io/jma/" title="Home"><img src="https://drbproductions.github.io/jma/img/logo.png" alt="Logo" class="img-fluid"></a></div>
-          <div class="col-md-3">
-            <h2 class="h4 text-white">CONTACT US</h2>
-            <address><strong>JMA Architecture</strong><br>
-                      10138 Wascana Estates<br>
-                      Regina, SK &nbsp; CANADA<br>
-                      S4V 2X4
-                  </address>
-                  <p class="h3"><a href="tel:+13065305482">306.530.5482</a></p>
-          </div>
-          <div class="col-md-6">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20335.697986891973!2d-104.538088!3d50.423175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531ea0156ce3f407%3A0xa1eae09e91dae6eb!2s10138%20Wascana%20Estates%2C%20Regina%2C%20SK%20S4V%202X4!5e0!3m2!1sen!2sca!4v1614220715584!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-  
-      </div>
-    </section>
-    <section class="container-fluid bg-black mt-0 py-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center text-white">
-             <p>&copy;<script>document.write(new Date().getFullYear())</script> JMA Architecture. jmaarchitecture.ca All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </footer>
-  </body>
-  </html>
+  gsap.from("#gsap-home-testimonial", {
+    scrollTrigger: {
+      trigger: '#gsap-home-testimonial',
+      start: "center center",
+      end: "top center",
+      scrub: 2
+    },
+    y: 50,
+    opacity: 0
+  })
+  gsap.from("#gsap-home-welcome", {
+    scrollTrigger: {
+      trigger: '#gsap-home-welcome',
+      start: "center bottom",
+      end: "top center",
+      scrub: 1
+    },
+    x: 50,
+    opacity: 0
+  })
+</script>
+</body>
+</html>

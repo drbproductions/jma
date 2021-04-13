@@ -11,7 +11,8 @@ $slick-dot-color: $primary;
 @import "../../vendor/slick-1.9.0/slick/slick-theme"; 
 @import "global_layout";
 @import "typography";
-
+@import "gsap";
+@import "home-cards";
  
 @include media-breakpoint-up(sm) {
 
@@ -27,7 +28,7 @@ $slick-dot-color: $primary;
 
 @include media-breakpoint-up(xl) {
 	
-}
+} 
 
 .slick-prev,
 .slick-next {

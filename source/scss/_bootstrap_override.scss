@@ -2,15 +2,14 @@
 	width: 100%;
 }
 
-$font-family-sans-serif:      'Open Sans', sans-serif;
+$font-family-sans-serif:      'Questrial', sans-serif;
 $headings-font-family:        'Questrial', sans-serif;
 $headings-font-weight:        400 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              #444;
-
+$grid-gutter-width:           30px !default;
 $lead-font-size:              1.5rem;
 $lead-font-weight:            500 !default;
-
 
 $enable-responsive-font-sizes: true;
 $enable-rounded: false;
@@ -32,7 +31,7 @@ $enable-gradients: true;
 // Changing the border radius of buttons
 $border-radius-sm: .2rem;
 $border-radius: .25rem;
-$border-radius-lg: .3rem;
+$border-radius-lg: .3rem; 
 
 
 // Changing the theme colors
