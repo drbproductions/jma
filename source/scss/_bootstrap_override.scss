@@ -1,37 +1,7 @@
-.img-fluid {
-	width: 100%;
-}
-
-$font-family-sans-serif:      'Questrial', sans-serif;
-$headings-font-family:        'Questrial', sans-serif;
-$headings-font-weight:        400 !default;
-$headings-line-height:        1.2 !default;
-$headings-color:              #444;
-$grid-gutter-width:           30px !default;
-$lead-font-size:              1.5rem;
-$lead-font-weight:            500 !default;
-
-$enable-responsive-font-sizes: true;
-$enable-rounded: false;
-// Overwrite Bootstrap's variables here
-// You can find them in vendor/bootstrap/scss/_variables.scss
-// Copy the variables you need into this file, don't modify files under node_modules/
-
-// Some example variables that you can uncomment:
-
-// Enabling shadows and gradients
-$enable-shadows: true;
-$enable-gradients: true;
 
 
-
-
-
-
-// Changing the border radius of buttons
-$border-radius-sm: .2rem;
-$border-radius: .25rem;
-$border-radius-lg: .3rem; 
+$font-family-sans-serif:      'Open Sans', sans-serif;
+$headings-font-family:        'Montserrat', sans-serif;
 
 
 // Changing the theme colors
@@ -65,51 +35,5 @@ $link-hover-color:      darken($link-color, 15%) ;
 //** Link hover decoration.
 $link-hover-decoration: underline ;
 
-
-$navbar-dark-color:                 rgba($primary, .75);
-$navbar-dark-hover-color:           $primary;
-$navbar-dark-active-color:          #ffffff;
-// $navbar-dark-disabled-color:        rgba($white, .25) !default;
-$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-$navbar-dark-toggler-border-color:  rgba($primary, .1) !default;
-
-
-$paragraph-margin-bottom:   1rem ;
-
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1400px
-) !default;
-
-
-
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1340px
-) !default;
-
-$input-btn-padding-x-sm:     .5rem !default;
-$input-btn-padding-x:      	1.25rem !default;
-$input-btn-padding-x-lg:      2rem !default;
-
-
-// $spacer	1rem (default), or any value > 0			Specifies the default spacer value to programmatically generate our spacer utilities.
-// $enable-rounded	true (default) or false				Enables predefined border-radius styles on various components.
-// $enable-shadows	true or false (default)				Enables predefined box-shadow styles on various components.
-// $enable-gradients	true or false (default)			Enables predefined gradients via background-image styles on various components.
-// $enable-transitions	true (default) or false			Enables predefined transitions on various components.
-// $enable-grid-classes	true (default) or false		Enables the generation of CSS classes for the grid system (e.g., .container, .row, .col-md-1, etc.).
-// $enable-caret	true (default) or false				Enables pseudo element caret on .dropdown-toggle.
-// $enable-print-styles	true (default) or false		Enables styles for optimizing printing.
-
+$navbar-nav-link-padding-x:         .75rem !default;
 

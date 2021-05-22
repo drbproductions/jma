@@ -2,6 +2,8 @@
 /resources
 /vendor
 /client-source-files
+/img/past-projects-src
+/img/projects-src
 
 # General
 .DS_Store

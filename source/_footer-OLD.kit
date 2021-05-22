@@ -1,0 +1,82 @@
+<footer class="main-footer bg-dark">
+  <section class="container-fluid pt-5 pb-4">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-md-3  mb-5"><a class="footer-navbar-brand" href="<!--$baseURL-->/" title="Home"><img src="<!--$baseURL-->/img/logo.png" alt="Logo" class="img-fluid"></a></div>
+        <div class="col-md-3">
+          <h2 class="h4 text-white">CONTACT US</h2>
+          <address><strong>JMA Architecture</strong><br>
+                    10138 Wascana Estates<br>
+                    Regina, SK &nbsp; CANADA<br>
+                    S4V 2X4
+                </address>
+                <p class="h3"><a href="tel:+13065305482">306.530.5482</a></p>
+        </div>
+        <div class="col-md-6">
+          <div class="iframe-container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20335.697986891973!2d-104.538088!3d50.423175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531ea0156ce3f407%3A0xa1eae09e91dae6eb!2s10138%20Wascana%20Estates%2C%20Regina%2C%20SK%20S4V%202X4!5e0!3m2!1sen!2sca!4v1614220715584!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="container-fluid bg-black mt-0 py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center text-white">
+           <p>&copy;<script>document.write(new Date().getFullYear())</script> JMA Architecture. jmaarchitecture.ca All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      //speed: 1500,
+      effect: 'slide',
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script>
+
+  gsap.from("#gsap-home-testimonial", {
+    scrollTrigger: {
+      trigger: '#gsap-home-testimonial',
+      start: "center center",
+      end: "top center",
+      scrub: 2
+    },
+    y: 50,
+    opacity: 0
+  })
+  gsap.from("#gsap-home-welcome", {
+    scrollTrigger: {
+      trigger: '#gsap-home-welcome',
+      start: "center bottom",
+      end: "top center",
+      scrub: 1
+    },
+    x: 50,
+    opacity: 0
+  })
+</script>
+</body>
+</html>
